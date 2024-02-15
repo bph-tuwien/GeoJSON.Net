@@ -20,6 +20,7 @@ namespace GeoJSON.Net
         /// <summary>
         /// Paramterless constructor for deserialization with <see cref="https://www.newtonsoft.com/json"/>
         /// </summary>
+        [JsonConstructor]
         public GeoJSONObject()
         {
         }
