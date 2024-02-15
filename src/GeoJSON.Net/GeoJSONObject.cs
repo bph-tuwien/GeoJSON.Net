@@ -1,13 +1,12 @@
 ﻿// Copyright © Joerg Battermann 2014, Matt Hunt 2017
 
-using System.Linq;
-using System.Runtime.Serialization;
 using GeoJSON.Net.Converters;
 using GeoJSON.Net.CoordinateReferenceSystem;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GeoJSON.Net
 {
@@ -17,6 +16,14 @@ namespace GeoJSON.Net
     [JsonObject(MemberSerialization.OptIn)]
     public abstract class GeoJSONObject : IGeoJSONObject, IEqualityComparer<GeoJSONObject>, IEquatable<GeoJSONObject>
     {
+
+        /// <summary>
+        /// Paramterless constructor for deserialization with <see cref="https://www.newtonsoft.com/json"/>
+        /// </summary>
+        public GeoJSONObject()
+        {
+        }
+
         internal static readonly DoubleTenDecimalPlaceComparer DoubleComparer = new DoubleTenDecimalPlaceComparer();
 
         /// <summary>
