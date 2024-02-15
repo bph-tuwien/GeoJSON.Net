@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard1.0;netstandard1.1;netstandard2.0;netstandard2.1;net40;net45;net5.0</TargetFrameworks>
     <Description>.Net types for the GeoJSON RFC to be used with Json.Net</Description>
     <Authors>Matt Hunt;Joerg Battermann;Xavier Fischer</Authors>
-    <Company>GeoJSON.Net</Company>
+    <Company>GeoJSON.Net;BPH-TUWIEN</Company>
     <Copyright>Copyright © Joerg Battermann, Matt Hunt, Xavier Fischer and Contributors, 2014 - 2019</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.2.16</Version>
